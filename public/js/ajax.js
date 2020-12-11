@@ -11,7 +11,7 @@ request.onload= function() {
         var txt="";
         for (el of nvRequest)
         {
-            txt+='<div class="block_oranje"><form action="index.php?action=ViewSpec" method="post"><input type="img" value=' +el.name + ' class="image" src=' + el.image + '>';
+            txt+='<div class="block_oranje"><img class="image" src=' + el.image + '>';
             txt+='<input type ="checkbox" class="input" id=' + el.name + ' name="produit[]" value=' + el.name + "#" + el.price + ' ><label for=' + el.name + '>' + el.name + ' ' + ' <strong>' + el.price + '€ </strong></label></br>';
             txt+='<span class="description">'+ el.description +'</span></div>';
         }
