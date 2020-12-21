@@ -1,27 +1,30 @@
 <?php
 require 'controller/controller.php';
+
+$controller = new Controller();
+
 try{
 	if (isset($_GET['action'])) {
 		if ($_GET['action'] == 'commande' && isset($_POST['produit'])){
-			postProducts($_POST['produit']);
+			$controller->postProducts($_POST['produit']);
 		} elseif ($_GET['action'] == 'commande' && !isset($_POST['produit'])){
-			postNoProduct();
+			$controller->postNoProduct();
 		} elseif ($_GET['action'] == 'ajout'){
 			if ($_POST['name']!="" && $_POST['price']!=""){
-				addProducts($_POST['name'], $_POST['price'], $_POST['description'], $_POST['image']);
+				$controller->addProducts($_POST['name'], $_POST['price'], $_POST['description'], $_POST['image']);
 			} else {
-				addNoProduct();
+				$controller->addNoProduct();
 			}
 		} elseif ($_GET['action'] == 'ajoutView'){
-			askAddProducts();
+			$controller->askAddProducts();
 		} elseif ($_GET['action'] == 'catalog'){
-			postCatalog();
+			$controller->postCatalog();
 		} elseif ($_GET['action'] == 'confirmation'){
-			confirm();
+			$controller->confirm();
 		}
     }
 	else{
-		askChoice();
+		$controller->askChoice();
     }
 } catch (Exception $e) {
 	echo $e->getMessage();

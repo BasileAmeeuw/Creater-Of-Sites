@@ -1,6 +1,6 @@
 <?php
-require 'vendor/autoload.php';
-require 'model/ProductsManager.php';
+require_once 'vendor/autoload.php';
+require_once 'model/ProductsManager.php';
 use PHPUnit\Framework\TestCase;
 
 class ProductsManagerTest extends TestCase{

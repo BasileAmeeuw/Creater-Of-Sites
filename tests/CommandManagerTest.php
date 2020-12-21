@@ -1,6 +1,6 @@
 <?php
-require 'vendor/autoload.php';
-require 'model/CommandManager.php';
+require_once 'vendor/autoload.php';
+require_once 'model/CommandManager.php';
 use PHPUnit\Framework\TestCase;
 
 class CommandManagerTest extends TestCase{
