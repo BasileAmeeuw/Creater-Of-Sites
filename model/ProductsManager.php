@@ -1,6 +1,16 @@
 <?php 
+
+/*
+class ProductsManager manages all what about products
+*/
 class ProductsManager
 {
+    /*
+    function getProducts get all the products that are chosen by the shopper in a table and the prices too.
+    $productsName is a table with all the names of products and $productsPrice is a table with all the prices of products.
+    Send an exception if there are more than "#" in $nameHashPrice
+    Send an exception if there are not found in an array
+    */
     function getProducts($nameHashPrice){
         if (is_array($nameHashPrice)){
             
@@ -18,7 +28,6 @@ class ProductsManager
                 
             }
             $namePrice[0]=$productsName;
-            echo $productsName[0];
             $namePrice[1]=$productsPrice;
             return $namePrice;
         } else {
@@ -27,8 +36,11 @@ class ProductsManager
         
     }
 
+    /*
+    function addProducts2JSON is a function needed to add the products in the JSON file
+    description and image are setted by default if there aren't anyone
+    */
     function addProducts2JSON($name,$price,$description,$urlImage,$filename="./public/js/Products.json"){
-        // data strored in array
         if ($description==""){
             $description="No description";
         } 
