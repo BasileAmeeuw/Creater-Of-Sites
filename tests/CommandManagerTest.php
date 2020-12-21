@@ -24,9 +24,11 @@ class CommandManagerTest extends TestCase{
     public function testNotTable () {
         $NotList="test";
         $command=new CommandManager();
-        $commandTotal = $command ->totalPrice($NotList);
-
-        $this->assertEquals($commandTotal,"ERROR");
+        try {
+            $commandTotal = $command ->totalPrice($NotList);
+        } catch (Exception $e){
+            $this->assertEquals("Erreur dans les prix. Ne sont pas dans un tableau",$e->getMessage());
+        }
     }
 
     public function testOnePrice (){

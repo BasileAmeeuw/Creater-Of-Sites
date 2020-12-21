@@ -149,7 +149,7 @@ final class TestResult implements Countable
     /**
      * @var bool
      */
-    private $beStrictAboutTestsThatDoNotTestAnything = true;
+    private $beStrictAboutTestsThatDoNotTestAnything = false;
 
     /**
      * @var bool

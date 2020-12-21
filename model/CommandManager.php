@@ -1,4 +1,5 @@
 <?php 
+
 class CommandManager
 {
     public function totalPrice($priceProduct)
@@ -10,7 +11,7 @@ class CommandManager
                 $price+=$priceProduct[$i];
             }
         } else {
-            $price="ERROR";
+            throw new Exception("Erreur dans les prix. Ne sont pas dans un tableau");
         }
         return $price;
     }
