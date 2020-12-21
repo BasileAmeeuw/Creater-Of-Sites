@@ -2,6 +2,9 @@
 require_once 'model/CommandManager.php';
 require_once 'model/ProductsManager.php';
 
+/*
+class Controller makes the relation between model and view.
+*/
 class Controller
 {
     /*

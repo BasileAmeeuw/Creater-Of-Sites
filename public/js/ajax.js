@@ -1,6 +1,9 @@
 var requestURL ="public/js/Products.json";
 var request = new XMLHttpRequest();
 
+/*
+This part in JavaScript is needed for the dynamically part of the site. It takes all the name/price/image and description to show them
+*/
 
 request.open('GET', requestURL,true);
 
