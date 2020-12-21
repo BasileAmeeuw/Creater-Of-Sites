@@ -1,7 +1,6 @@
 <?php 
-require_once 'model/command.php';
-require_once 'model/products.php';
-require_once 'model/productsAdd.php';
+require_once 'model/CommandManager.php';
+require_once 'model/ProductsManager.php';
 
 function postCatalog()
 {   
@@ -12,10 +11,12 @@ function postCatalog()
 
 function postProducts($nameHashPrice)
 {
-    $nameAndPrice=getProducts($nameHashPrice);
+    $product = new ProductsManager();
+    $command = new CommandManager();
+    $nameAndPrice=$product->getProducts($nameHashPrice);
     $productsName=$nameAndPrice[0];
     $productsPrice=$nameAndPrice[1];
-    $total=totalPrice($productsPrice);
+    $total=$command->totalPrice($productsPrice);
     
     require 'view/recap.php';
 }
@@ -29,7 +30,8 @@ function postNoProduct()
 
 function addProducts($name,$price,$description,$urlImage)
 {
-    addProducts2JSON($name,$price,$description,$urlImage);
+    $product = new ProductsManager();
+    $product->addProducts2JSON($name,$price,$description,$urlImage);
     $HasBeenHad="yes";
 
     require 'view/creation_JSON.php';
