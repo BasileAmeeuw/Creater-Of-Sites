@@ -39,6 +39,12 @@ You have to install several plug-ins on VS Code ! (in addition to Php of course)
 * You have to install PHPUnit and facultatively PHPUnit Test Explorer.
 <img src="https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/phpUnit.gif" width="700" height="450">
 
+## Coding requirement (MVC architecture)
+
+This code is implemented in a MVC architecture, it'll be not successful if you change it. 
+It's also possible to make all part of the architecture as class but not necessary. I've made it for the model files because it was easier for the test and to arrange it.
+There is also a bit of javascript for one form, to pick all the informations from the json but normally you don't have to modify it !
+
 ## Tests runing 
 
 If you have install the two plug-ins here above, you have 2 ways to run the tests.
