@@ -70,7 +70,7 @@ There are several tests for one single methods because there are several things 
 
 This implementation in PhP is to be used to send products that we can add in a local database of type Json. So that we can easily take this DB and set it somewhere else.
 We have 5 different views. 
-<img src="https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/views.gif" width="700" height="450">
+<img src="https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/views.gif" width="700" height="450"><br>
 The first one is to chose, the second one to set the products in the Json and the other one to command.
 You can always go check in the file public/js/Products.json what were insert in it. (test.json has been created only for testing)
 
