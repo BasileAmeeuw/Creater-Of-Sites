@@ -52,11 +52,11 @@ If you have install the two plug-ins here above, you have 2 ways to run the test
 * You enter the comand "./vendor/bin/phpunit tests" 
 <img src="https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/testall.gif" width="700" height="450">
 
-### Break down into end to end tests
+### What about tests
 
 These tests are testing the methods in the model (managerClasses) because it's the only place where there are operations between objects.
 
-### And coding style tests
+### How coding tests
 
 There are several tests for one single methods because there are several things to tests and every one test only one thing by test.
 
