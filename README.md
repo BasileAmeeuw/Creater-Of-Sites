@@ -23,38 +23,54 @@ To make the code work locally you have to follow the next instructions.
 2. When it's done, you have to clone this repository from github in the repository www in the repository WampServer like this:
 * You clone from the github like this
 <img src="https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/Clone.gif" width="700" height="450">
-![picture alt](https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/Clone.gif =250x250 "How to clone on github" )
 * Then you clone it in the right repository in your computer.
-![picture alt](https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/Wamp.gif =250x250 "How to clone on your computer" )
+<img src="https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/Wamp.gif" width="700" height="450">
 
-## Running the tests
+3. After that you should be able to make the code run on a navigator Browser, I recommend Firefox but you can do it with a lot of others.
+* You enter "localhost" on Firefox or 127.0.0.1:8000 (that is the adress set by default but it can be changed.)
+* Then you should see a page with several functions, the best way to be sure that it works is not to click on Creator-of-Sites but to tap it himself after a slash in the adress location:
+<img src="https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/localhost.gif" width="700" height="450">
+ * Now you should be on the first right page.
 
-Explain how to run the automated tests for this system
+### Installation for the tests
+
+I recommend you Visual Studio Code (https://code.visualstudio.com/) !
+You have to install several plug-ins on VS Code ! (in addition to Php of course).
+* You have to install PHPUnit and facultatively PHPUnit Test Explorer.
+<img src="https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/phpUnit.gif" width="700" height="450">
+
+## Tests runing 
+
+If you have install the two plug-ins here above, you have 2 ways to run the tests.
+
+1. First you go in the folder, you open one of the testClass and then you run the test one by one like this.
+(You will see the results in the Output and you have to choose PHPUnit Language Server)
+<img src="https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/test1by1.gif" width="700" height="450">
+
+2. Second method is to test all test together with the terminal. You can do it also directly on VS code (if you have the plug-ins for)
+* You go in the right folder with the teminal comand "cd"
+* You enter the comand "./vendor/bin/phpunit tests" 
+<img src="https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/testall.gif" width="700" height="450">
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
-
-```
-Give an example
-```
+These tests are testing the methods in the model (managerClasses) because it's the only place where there are operations between objects.
 
 ### And coding style tests
 
-Explain what these tests test and why
+There are several tests for one single methods because there are several things to tests and every one test only one thing by test.
 
-```
-Give an example
-```
+# What for 
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+This implementation in PhP is to be used to send products that we can add in a local database of type Json. So that we can easily take this DB and set it somewhere else.
+We have 5 different views. 
+<img src="https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/views.gif" width="700" height="450">
+The first one is to chose, the second one to set the products in the Json and the other one to command.
+You can always go check in the file public/js/Products.json what were insert in it. (test.json has been created only for testing)
 
 ## Built With
 
 * https://github.com/sebastianbergmann/phpunit
-* 
 
 ## Contributing
 
@@ -68,8 +84,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+# Still to do
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+First improve a lot of basic function or put new function in. We could imagine a page for recomandation or add it to a actual page.
+It can be good if anyone can set something in the CSS file which is setted in public.
