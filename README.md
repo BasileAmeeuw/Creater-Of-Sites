@@ -22,7 +22,7 @@ To make the code work locally you have to follow the next instructions.
 
 2. When it's done, you have to clone this repository from github in the repository www in the repository WampServer like this:
 * You clone from the github like this
-<img src="https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/Clone.gif" width="500" height="350">
+<img src="https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/Clone.gif" width="700" height="450">
 ![picture alt](https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/Clone.gif =250x250 "How to clone on github" )
 * Then you clone it in the right repository in your computer.
 ![picture alt](https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/Wamp.gif =250x250 "How to clone on your computer" )
