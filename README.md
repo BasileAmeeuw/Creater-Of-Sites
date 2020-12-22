@@ -20,8 +20,11 @@ To make the code work locally you have to follow the next instructions.
 1. First you have to install WampServer (or another one):
  * To do this I recommend you to follow this tutorial https://www.w3resource.com/php/installation/install-wamp.php
 
-2. When it's done, you hav to clone this repository in the repository www in the repository WampServer like this:
-![picture alt](http://via.placeholder.com/200x150 "Title is optional")
+2. When it's done, you have to clone this repository from github in the repository www in the repository WampServer like this:
+* You clone from the github like this
+![picture alt](https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/Wamp.gif "How to clone on your computer")
+* Then you clone it in the right repository in your computer.
+
 
 ## Running the tests
 
