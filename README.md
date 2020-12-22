@@ -18,7 +18,7 @@ You need also to download Git if you want to follow this tutorial step by step. 
 To make the code work locally you have to follow the next instructions.
 
 1. First you have to install WampServer (or another one):
- * To do this I recommend you to follow this tutorial https://www.w3resource.com/php/installation/install-wamp.php
+ * To do this I recommend you to follow this tutorial <a href="https://www.w3resource.com/php/installation/install-wamp.php"> WampServer </a>
 
 2. When it's done, you have to clone this repository from github in the repository www in the repository WampServer like this:
 * You clone from the github like this
@@ -34,7 +34,7 @@ To make the code work locally you have to follow the next instructions.
 
 ### Installation for the tests
 
-I recommend you Visual Studio Code (https://code.visualstudio.com/) !
+I recommend you Visual Studio Code (<a href="https://code.visualstudio.com/"> Visual Studio Code </a>) !
 You have to install several plug-ins on VS Code ! (in addition to Php of course).
 * You have to install PHPUnit and facultatively PHPUnit Test Explorer.
 <img src="https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/phpUnit.gif" width="700" height="450">
@@ -80,7 +80,7 @@ You can always go check in the file public/js/Products.json what were insert in 
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Author
 
