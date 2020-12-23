@@ -27,7 +27,9 @@ To make the code work locally you have to follow the next instructions.
 <img src="https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/Wamp.gif" width="700" height="450">
 
 3. After that you should be able to make the code run on a navigator Browser, I recommend Firefox but you can do it with a lot of others.
-* You enter "localhost" on Firefox or 127.0.0.1:8000 (that is the adress set by default but it can be changed.)
+* First you run WampServer
+<img src="https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/wampserver.gif" width="700" height="450">
+* Secondly, you enter "localhost" on Firefox or 127.0.0.1:8000 (that is the adress set by default but it can be changed.)
 * Then you should see a page with several functions, the best way to be sure that it works is not to click on Creator-of-Sites but to tap it himself after a slash in the adress location:
 <img src="https://github.com/BasileAmeeuw/Creator-of-Sites/blob/master/Image/localhost.gif" width="700" height="450">
  * Now you should be on the first right page.
