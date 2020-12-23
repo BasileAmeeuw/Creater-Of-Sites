@@ -1,3 +1,10 @@
+<!--
+This view is the view to show to the shopper what he has chosen to buy.
+There is also the system of payment in this view proposed.
+This view can come from view/articles_catalog.php
+This view can go to view/articles_catalog.php or to view/confirmation.php
+-->
+
 <?php $title = "Commande de produits" ?>
 
 
@@ -12,7 +19,7 @@ Prix : <?php echo $productsPrice[$i] ?> €</div> <?php
 
 
 <form action="index.php?action=catalog" method="post">
-    <input type="submit" id="Nouvelle_commande" name="Nouvelle commande" value="Nouvelle commande">
+    <input type="submit" id="Nouvelle_commande" name="Voulez vous modifier la commande" value="Voulez vous modifier la commande">
 </form>
 
 <form action="index.php?action=confirmation" method="post">

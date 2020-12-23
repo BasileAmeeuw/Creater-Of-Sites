@@ -95,4 +95,15 @@ class Controller
     {
         require 'view/confirmation.php';
     }
+
+    /*
+    function showJSONfile is an helping function to show the JSON file with all the products
+    */
+    function showJSONfile() 
+    {
+        $json_source = file_get_contents('public/js/Products.json');
+        $json_data = json_decode($json_source);
+        
+        require 'view/JSON.php';
+    }
 }

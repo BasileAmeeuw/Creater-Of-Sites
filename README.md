@@ -96,4 +96,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 # Still to do
 
 First improve a lot of basic function or put new function in. We could imagine a page for recomandation or add it to a actual page.
-It can be good if anyone can set something in the CSS file which is setted in public.
+It can be good if anyone can set something in the CSS file which is setted in public. But first the template of view has to be more used because it's only used for the recap view and it must be used for all views
