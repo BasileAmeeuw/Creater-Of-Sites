@@ -10,8 +10,9 @@ class ProductsManagerTest extends TestCase{
         $product = new ProductsManager();
         try{
             $productVector = $product->getProducts($NamePrice);
+            $this->fail();
         } catch (Exception $e){
-            $this->assertEquals("Le nom et le prix doivent se trouver dans un array",$e->getMessage());
+            $this->assertEquals(2,$e->getCode());
         }
     }
 
@@ -55,8 +56,9 @@ class ProductsManagerTest extends TestCase{
         $product = new ProductsManager();
         try{
             $productVector = $product->getProducts($NamePrice);
+            $this->fail();
         } catch (Exception $e){
-            $this->assertEquals("Il y a une erreur dans la commande, sûrement un # qui se trouve dans le nom ce qui n'est pas possible",$e->getMessage());
+            $this->assertEquals(1,$e->getCode());
         }
     }
 

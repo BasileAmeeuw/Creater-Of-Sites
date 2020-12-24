@@ -23,7 +23,7 @@ class ProductsManager
                     $productsName[$i]=$productsExploded[0];
                     $productsPrice[$i]=$productsExploded[1];
                 } else {
-                    throw new Exception("Il y a une erreur dans la commande, sûrement un # qui se trouve dans le nom ce qui n'est pas possible");
+                    throw new Exception("Il y a une erreur dans la commande, sûrement un # qui se trouve dans le nom ce qui n'est pas possible",1);
                 }
                 
             }
@@ -31,7 +31,7 @@ class ProductsManager
             $namePrice[1]=$productsPrice;
             return $namePrice;
         } else {
-            throw new Exception("Le nom et le prix doivent se trouver dans un array");
+            throw new Exception("Le nom et le prix doivent se trouver dans un array",2);
         }
         
     }

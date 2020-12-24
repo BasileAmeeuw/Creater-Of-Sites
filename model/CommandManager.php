@@ -16,7 +16,7 @@ class CommandManager
                 $price+=$priceProduct[$i];
             }
         } else {
-            throw new Exception("Erreur dans les prix. Ne sont pas dans un tableau");
+            throw new Exception("Erreur dans les prix. Ne sont pas dans un tableau",3);
         }
         return $price;
     }

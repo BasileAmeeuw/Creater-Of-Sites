@@ -29,8 +29,9 @@ class CommandManagerTest extends TestCase{
         $command=new CommandManager();
         try {
             $commandTotal = $command ->totalPrice($NotList);
+            $this->fail();
         } catch (Exception $e){
-            $this->assertEquals("Erreur dans les prix. Ne sont pas dans un tableau",$e->getMessage());
+            $this->assertEquals(3,$e->getCode());
         }
     }
 
